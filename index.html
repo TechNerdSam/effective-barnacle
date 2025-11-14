@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Manifeste du Solitaire : Stratégie d'Élite</title>
+    <!-- Chargement de Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuration de Tailwind (optionnel, pour les polices) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'text-gradient': 'text-gradient 5s linear infinite',
+                    },
+                    keyframes: {
+                        'text-gradient': {
+                            'to': { 'background-position': '200% center' },
+                        },
+                    }
+                },
+            },
+        }
+    </script>
+    <!-- Styles CSS personnalisés pour les animations et le design "élite" -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+
+        /* Style pour l'animation de dégradé de texte */
+        .animated-gradient {
+            background: linear-gradient(to right, #fb7185, #fdba74, #fb7185); /* Palette "Rose Doré / Orange" */
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-gradient 5s linear infinite;
+        }
+
+        /* Styles pour l'animation d'apparition au défilement (Scroll Reveal) */
+        .reveal-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .reveal-card.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Le badge "OK" a été supprimé */
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <!-- En-tête de Navigation Sticky -->
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 w-full shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold animated-gradient">Le Manifeste</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#intellectuel" class="text-gray-300 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Intellect</a>
+                        <a href="#financier" class="text-gray-300 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Finance (Résilience)</a>
+                        <a href="#physique" class="text-gray-300 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Physique</a>
+                        <a href="#mental" class="text-gray-300 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Mental</a>
+                        <a href="#heritage" class="text-gray-300 hover:text-rose-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Héritage</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main class="max-w-5xl mx-auto p-4 md:p-8 mt-10">
+
+        <!-- Titre Principal -->
+        <div class="text-center mb-16 reveal-card">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">
+                Le Manifeste du Solitaire
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-light animated-gradient">
+                Stratégie d'Investissement pour une Vie d'Élite
+            </h2>
+        </div>
+
+        <!-- ===== I. Investissements Intellectuels ===== -->
+        <section id="intellectuel" class="mb-20">
+            <div class="flex items-center mb-8 reveal-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-rose-400 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
+                </svg>
+                <h3 class="text-3xl font-bold text-white border-b-2 border-rose-400 pb-2">I. Investissements Intellectuels : Forgez un Esprit d'Élite</h3>
+            </div>
+            <p class="text-lg text-gray-400 mb-8 reveal-card">Ces investissements visent à accroître votre capital de connaissances et de compétences, créant ainsi une base solide pour un succès durable et solitaire.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" /></svg>
+                        <h4 class="text-xl font-semibold text-white">1. Bibliothèque Personnelle de Maîtrise</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Constituez une collection d'ouvrages fondamentaux dans vos domaines d'intérêt.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La lecture rapide et la prise de notes pour une assimilation profonde.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5 0-4.5 16.5" /></svg>
+                        <h4 class="text-xl font-semibold text-white">2. Compétence à Haut Rendement</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Apprenez une compétence monétisable (codage, copywriting, analyse de données).</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'apprentissage par projet en réalisant des projets concrets.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C13.18 6.962 14.11 8.8 15 10.5m-6 0C7.18 6.962 6.244 8.8 6 10.5" /></svg>
+                        <h4 class="text-xl font-semibold text-white">3. Apprentissage d'une Nouvelle Langue</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Maîtrisez une langue stratégique pour les affaires, la culture ou les voyages.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'immersion simulée via des médias et des conversations en ligne.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L1.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.25 12h.008v.008h-.008V12Zm0 0h.008v.008h-.008V12Zm0 0h.008v.008h-.008V12Zm0 0h.008v.008h-.008V12Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">4. Création d'un "Second Cerveau"</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Utilisez Notion ou Obsidian pour organiser vos connaissances et idées.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La méthode Zettelkasten pour créer un réseau de notes.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.697 50.697 0 0 1 7.732-3.342M12 5.093A50.935 50.935 0 0 0 3.268 3.493c-.097.032-.192.067-.286.102a51.159 51.159 0 0 0-2.73 4.474c.097.032.192.067.286.102a51.159 51.159 0 0 0 2.73 4.474c.097.032.192.067.286.102A50.935 50.935 0 0 0 12 5.093m0 14.814a50.935 50.935 0 0 1-8.732-1.4c.097-.032.192-.067.286-.102a51.159 51.159 0 0 1 2.73-4.474c.097-.032.192-.067.286-.102a51.159 51.159 0 0 1 2.73-4.474c.097-.032.192-.067.286-.102A50.935 50.935 0 0 1 12 19.907Zm0 0A50.935 50.935 0 0 0 20.732 18.5c.097.032.192.067.286.102a51.159 51.159 0 0 0 2.73 4.474c.097.032.192.067.286.102a51.159 51.159 0 0 0 2.73-4.474c.097-.032.192-.067.286-.102A50.935 50.935 0 0 0 12 19.907Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">5. Formation en Ligne de Prestige</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Suivez des cours de grandes universités (Coursera, edX) ou d'experts reconnus.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'engagement actif via les forums et la réalisation des exercices.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">6. Publications Spécialisées</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Accédez à des informations et des analyses pointues dans votre secteur.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La synthèse hebdomadaire des lectures pour distiller les idées clés.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.998-2.582M7.5 14.25a3 3 0 0 0-3 3h3v-3Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a3 3 0 0 0 3 3h1.125c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375m0 3.75zM20.625 19.5h-1.125c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125H20.625m0-3.75zM15.75 15.75v-1.125c0-.621.504-1.125 1.125-1.125h1.125c.621 0 1.125.504 1.125 1.125v1.125m-3.375 0h3.375M9 15.75v-1.125c0-.621.504-1.125 1.125-1.125h1.125c.621 0 1.125.504 1.125 1.125v1.125m-3.375 0h3.375m-7.5 3H7.5" /><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5a9 9 0 0 0 9 9m0-9a9 9 0 0 1 9 9v-1.5M3 3h1.5a9 9 0 0 1 9 9m-9 0a9 9 0 0 0 9 9" /></svg>
+                        <h4 class="text-xl font-semibold text-white">7. Masterminds d'Élite (en ligne)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Échangez avec des pairs ambitieux et partagez des stratégies de succès.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La préparation rigoureuse de chaque session avec des objectifs clairs.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== II. Investissements Financiers (Version "Bad Life" Reformulée) ===== -->
+        <section id="financier" class="mb-20">
+            <div class="flex items-center mb-8 reveal-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-rose-400 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.3-5.337m-15.3 0a60.07 60.07 0 0 0 15.3-5.337m-15.3 0v-4.5A2.25 2.25 0 0 1 4.5 6.75h15a2.25 2.25 0 0 1 2.25 2.25v4.5m-19.5 0a48.07 48.07 0 0 1 19.5 0m-19.5 0a48.07 48.07 0 0 0 19.5 0m-19.5 0v4.5A2.25 2.25 0 0 0 4.5 21h15a2.25 2.25 0 0 0 2.25-2.25v-4.5m-19.5 0a48.07 48.07 0 0 1 19.5 0" />
+                </svg>
+                <h3 class="text-3xl font-bold text-white border-b-2 border-rose-400 pb-2 mb-8 reveal-card">II. Investissements de Résilience Financière : Survivre et Reconstruire ("Bad Life" Edition)</h3>
+            </div>
+            <p class="text-lg text-gray-400 mb-8 reveal-card">Ces stratégies visent à reprendre le contrôle, à minimiser les pertes et à bâtir une nouvelle fondation économique depuis le point le plus bas, avec mérite et discipline.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">8. Maîtrise de la Dette et Budget "Zéro"</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Reprenez le contrôle total de vos flux. Chaque euro doit avoir une mission.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'analyse "forensique" de chaque dépense pour éliminer le superflu et attaquer la dette.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                        <h4 class="text-xl font-semibold text-white">9. Optimisation Radicale du Logement</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Réduisez votre coût de vie le plus important pour libérer du capital de survie.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> Le minimalisme extrême ou le "house hacking" (colocation, sous-location) pour réduire l'empreinte.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-6h6" /></svg>
+                        <h4 class="text-xl font-semibold text-white">10. Création de "Micro-Revenus" d'Urgence</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Développez des flux de trésorerie rapides basés sur vos compétences existantes.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La monétisation immédiate (freelance, missions courtes) pour des gains rapides.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.048l5.962 5.962-5.962 5.962A8.25 8.25 0 0 0 12 21a8.25 8.25 0 0 0 5.962-14.038Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">11. Lancement d'un "Projet de Frustration"</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Utilisez vos difficultés comme carburant pour créer un blog ou une chaîne authentique.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> Le "storytelling" de la lutte pour bâtir une audience solidaire et engagée.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.992 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.992-4.992v4.992m0 0h-4.992m4.992 0-3.181-3.183a8.25 8.25 0 0 0-11.667 0L2.985 14.654Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">12. Le Troc et les Réseaux d'Échange</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Recommandez des services de qualité en échange d'autres services, sans dépenser.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> Utiliser vos compétences comme monnaie d'échange pour préserver le capital.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                        <h4 class="text-xl font-semibold text-white">13. Évitement des "Pièges à Pauvreté"</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Allouez votre attention à des solutions réelles, pas à des mirages.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La pensée critique pour identifier les "get-rich-quick schemes" qui ciblent les vulnérables.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375" /></svg>
+                        <h4 class="text-xl font-semibold text-white">14. Fonds d'Urgence Minimaliste</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Mettez de côté une somme, même minime, pour briser le cycle de l'endettement.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La "gamification" de l'épargne (1€ par jour) pour bâtir un élan psychologique.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== III. Investissements Physiques ===== -->
+        <section id="physique" class="mb-20">
+            <div class="flex items-center mb-8 reveal-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-rose-400 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25c-1.48 0-2.75-.218-3.743-.633A48.01 48.01 0 0 0 8.25 7.5c-1.48 0-2.75-.218-3.743-.633A48.01 48.01 0 0 0 4.5 6.25m4.5 1.5c-1.48 0-2.75-.218-3.743-.633A48.01 48.01 0 0 0 5.25 7.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25c1.48 0 2.75-.218 3.743-.633A48.01 48.01 0 0 1 15.75 7.5c1.48 0 2.75-.218 3.743-.633A48.01 48.01 0 0 1 19.5 6.25m-4.5 1.5c1.48 0 2.75-.218 3.743-.633A48.01 48.01 0 0 1 18.75 7.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5c0 4.142 3.358 7.5 7.5 7.5h.008v.007c.017.118.029.238.046.357A48.016 48.016 0 0 1 12 16.5c-5.183 0-9.626-2.002-12-5.25v.007c0-4.142 3.358-7.5 7.5-7.5h.008v.007c.017.118.029.238.046.357A48.016 48.016 0 0 0 12 8.25c-5.183 0-9.626-2.002-12-5.25v.007" />
+                </svg>
+                <h3 class="text-3xl font-bold text-white border-b-2 border-rose-400 pb-2 mb-8 reveal-card">III. Investissements Physiques : Sculpter un Corps et un Esprit Performants</h3>
+            </div>
+            <p class="text-lg text-gray-400 mb-8 reveal-card">Votre corps est votre premier capital. Ces investissements sont essentiels pour maintenir une énergie et une concentration optimales.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">1. Routine d'Exercice Quotidienne</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Intégrez une activité physique qui vous plaît (musculation, yoga, course).</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'"empilement d'habitudes" (Habit Stacking) pour ancrer la routine.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">2. Optimisation de la Nutrition</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Adoptez une alimentation saine pour maximiser votre énergie et clarté mentale.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La planification des repas (Meal Prep) pour éliminer la prise de décision.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">3. Amélioration du Sommeil</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Créez un environnement de sommeil optimal (obscurité, silence, fraîcheur).</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La cohérence cardiaque ou la méditation guidée avant de dormir.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">4. Jeûne Intermittent</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Explorez les bienfaits du jeûne pour la concentration, l'énergie et la longévité.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> Le suivi de vos sensations pour ajuster le protocole à votre corps.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v.007a.375.375 0 0 1-.375.375H6.375a.375.375 0 0 1-.375-.375v-.007H4.125a.375.375 0 0 1-.375-.375v-1.5a.375.375 0 0 1 .375-.375h1.5a.375.375 0 0 1 .375.375v1.5a.375.375 0 0 1-.375.375H9.75ZM15 15.75v.007a.375.375 0 0 0 .375.375h1.875a.375.375 0 0 0 .375-.375v-.007h.375a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5a.375.375 0 0 0 .375.375H15Zm-6-6v.007a.375.375 0 0 1-.375.375H6.375a.375.375 0 0 1-.375-.375v-.007H4.125a.375.375 0 0 1-.375-.375v-1.5a.375.375 0 0 1 .375-.375h1.5a.375.375 0 0 1 .375.375v1.5a.375.375 0 0 1-.375.375H9.75ZM15 9.75v.007a.375.375 0 0 0 .375.375h1.875a.375.375 0 0 0 .375-.375v-.007h.375a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5a.375.375 0 0 0 .375.375H15Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">5. Équipement Ergonomique</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Un bureau assis-debout, une chaise de qualité pour préserver votre santé posturale.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La méthode Pomodoro pour intégrer le mouvement dans votre journée.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12.75 9 9 9-9m-9 9V3.375" /></svg>
+                        <h4 class="text-xl font-semibold text-white">6. Retraites Solitaires en Nature</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Planifiez des moments de déconnexion totale pour vous ressourcer.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La tenue d'un journal de réflexion pendant ces retraites.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
+                        <h4 class="text-xl font-semibold text-white">7. Suivi de la Santé (Bilans)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Effectuez des bilans de santé préventifs pour anticiper tout problème.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'auto-responsabilisation de votre bien-être (proactif vs réactif).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== IV. Investissements Mentaux et Émotionnels ===== -->
+        <section id="mental" class="mb-20">
+            <div class="flex items-center mb-8 reveal-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-rose-400 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a.75.75 0 0 0 .75-.75V11.02a2.25 2.25 0 0 1 .6-1.631l3.235-3.235A2.25 2.25 0 0 0 14.234 3H9.766a2.25 2.25 0 0 0-1.589 3.154l3.235 3.235A2.25 2.25 0 0 1 11.25 11.02V17.25a.75.75 0 0 0 .75.75Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 18a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 18c0 1.243.9 2.25 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18Z" />
+                </svg>
+                <h3 class="text-3xl font-bold text-white border-b-2 border-rose-400 pb-2 mb-8 reveal-card">IV. Investissements Mentaux et Émotionnels : Maîtriser son Univers Intérieur</h3>
+            </div>
+            <p class="text-lg text-gray-400 mb-8 reveal-card">La maîtrise de soi est le fondement de tout succès extérieur. Ces investissements sont cruciaux pour une performance durable.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" /></svg>
+                        <h4 class="text-xl font-semibold text-white">1. Pratique de la Réflexion (Tafakkur)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Entraînez votre esprit à être plus présent, concentré et à réfléchir (tafakkur).</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'augmentation progressive de la durée pour renforcer votre "muscle" attentionnel.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" /></svg>
+                        <h4 class="text-xl font-semibold text-white">2. Journal de Réflexion</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Réfléchissez chaque jour à vos actions, vos jugements et aux vertus à incarner.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> Se préparer aux épreuves avec patience (Sabr) et confiance (Tawakkul).</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-3.868 8.25-8.625 8.25S3.75 16.556 3.75 12 7.618 3.75 12.375 3.75S21 7.444 21 12Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">3. Communication Non Violente (CNV)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Maîtrisez l'art d'exprimer vos besoins, même dans votre dialogue intérieur.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'auto-observation de vos schémas et leur reformulation.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M11.412 15.655 11.748 15.372a.75.75 0 0 1 1.052 0l.335.283a.75.75 0 0 1 0 1.051l-4.11 3.653a.75.75 0 0 1-1.016.035l-3.01-2.738a.75.75 0 0 1 1.016-1.098l2.607 2.37Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 4.5a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V4.5Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 19.5 9 18.75M15.75 19.5 15 18.75M12 16.5c.328 0 .65.02.969.058m-1.938 0A10.45 10.45 0 0 0 12 16.5m0 0h.008m-.008 0c.328 0 .65.02.969.058m-1.938 0A10.45 10.45 0 0 0 12 16.5m0 0h.008m-.008 0c.328 0 .65.02.969.058m-1.938 0A10.45 10.45 0 0 0 12 16.5M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm16.5 0a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">4. Intelligence Émotionnelle</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Apprenez à identifier, comprendre et gérer vos propres émotions.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'exercice du "scan corporel" pour identifier les manifestations physiques.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">5. Consultation d'un Mentor</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Obtenez une perspective extérieure et des conseils stratégiques.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La préparation de questions puissantes et l'application immédiate.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a2.25 2.25 0 0 1-2.25 2.25H5.25a2.25 2.25 0 0 1-2.25-2.25v-8.25a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v.01M12 12v.01M12 9v.01M12 6v.01M12 3v.01M4.5 9v.01M4.5 12v.01M4.5 15v.01M19.5 9v.01M19.5 12v.01M19.5 15v.01" /></svg>
+                        <h4 class="text-xl font-semibold text-white">6. Pratique de la Reconnaissance (Shukr)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Notez chaque jour les bienfaits reçus pour reprogrammer votre cerveau.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'écriture de lettres de gratitude pour amplifier le sentiment.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.23 0l-4.11-2.37a1.5 1.5 0 0 1 0-2.61l4.11-2.37a6 6 0 0 1 5.23 0l4.11 2.37a1.5 1.5 0 0 1 0 2.61l-4.11 2.37Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.23 0l-4.11-2.37a1.5 1.5 0 0 1 0-2.61l4.11-2.37a6 6 0 0 1 5.23 0l4.11 2.37a1.5 1.5 0 0 1 0 2.61l-4.11 2.37Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.23 0l-4.11-2.37a1.5 1.5 0 0 1 0-2.61l4.11-2.37a6 6 0 0 1 5.23 0l4.11 2.37a1.5 1.5 0 0 1 0 2.61l-4.11 2.37Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">7. Méthode OKR (Objectives)</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Fixez-vous des objectifs ambitieux et mesurez vos progrès de manière rigoureuse.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La célébration des étapes clés pour maintenir la motivation.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== V. Investissements en "Héritage" et Créativité ===== -->
+        <section id="heritage" class="mb-20">
+            <div class="flex items-center mb-8 reveal-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-rose-400 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9a2.25 2.25 0 0 0-2.25 2.25v.003c0 .114.016.225.046.331m13.412-2.584c.03.106.046.217.046.331v.003a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-3.818c0-.635.247-1.223.659-1.663l5.43-5.43a2.25 2.25 0 0 1 1.591-.659h1.909a2.25 2.25 0 0 1 2.25 2.25v1.909c0 .635-.247 1.223-.659 1.663l-5.43 5.43" />
+                </svg>
+                <h3 class="text-3xl font-bold text-white border-b-2 border-rose-400 pb-2 mb-8 reveal-card">V. Investissements en "Héritage" et Créativité : Laisser une Trace Méritoire</h3>
+            </div>
+            <p class="text-lg text-gray-400 mb-8 reveal-card">Ces investissements transcendent le gain personnel immédiat pour construire quelque chose de durable et de significatif.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" /></svg>
+                        <h4 class="text-xl font-semibold text-white">1. Écriture d'un Livre/Manifeste</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Partagez vos idées, votre histoire ou votre expertise avec le monde.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La discipline de l'écriture quotidienne pour créer un élan.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm.024 10.02a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047Zm-.048-4.496a.75.75 0 1 1 .048.047.75.75 0 0 1-.048-.047Zm.024-5.522a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047ZM12 11.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm.024 10.02a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047Zm-.048-4.496a.75.75 0 1 1 .048.047.75.75 0 0 1-.048-.047Zm.024-5.522a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047ZM15 13.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm.024 10.02a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047Zm-.048-4.496a.75.75 0 1 1 .048.047.75.75 0 0 1-.048-.047Zm.024-5.522a.75.75 0 1 1-.048-.047.75.75 0 0 1 .048.047Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">2. Création d'une Œuvre Artistique</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Exprimez votre créativité (Musique, Peinture, Photographie).</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La pratique délibérée en se concentrant sur l'amélioration d'un aspect.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V5.75A2.25 2.25 0 0 0 18 3.5H6A2.25 2.25 0 0 0 3.75 5.75v12.5A2.25 2.25 0 0 0 6 20.25Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">3. Projet "Open Source" / Ressource Gratuite</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Contribuez à une communauté et bâtissez votre réputation.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'adoption d'un état d'esprit de "contribution".</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">4. Construction d'une "Arche de Connaissances"</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Documentez et organisez tout ce que vous apprenez pour le transmettre.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La simplification de concepts complexes comme si vous les enseigniez.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.66 0l-7.5-4.615A2.25 2.25 0 0 1 2.25 6.993v-.243Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">5. Lancement d'une Newsletter de Niche</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Fédérez une communauté autour de vos idées et de votre expertise.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'engagement à fournir une valeur exceptionnelle à chaque envoi.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296A3.745 3.745 0 0 1 16.5 21a3.745 3.745 0 0 1-2.407-.936c-.832-.733-1.043-1.89-1.043-3.068m0 0a3.745 3.745 0 0 0-1.043-3.296A3.745 3.745 0 0 0 10.5 12a3.745 3.745 0 0 0-2.407.936c-.832.733-1.043 1.89-1.043 3.068m0 0a3.745 3.745 0 0 0 1.043 3.296A3.745 3.745 0 0 0 10.5 21a3.745 3.745 0 0 0 2.407-.936c.832-.733 1.043-1.89 1.043-3.068m0 0a3.745 3.745 0 0 1 1.043-3.296A3.745 3.745 0 0 1 16.5 12a3.745 3.745 0 0 1 2.407.936c.832.733 1.043 1.89 1.043 3.068m0 0a3.745 3.745 0 0 1-1.043 3.296A3.745 3.745 0 0 1 16.5 21a3.745 3.745 0 0 1-2.407-.936c-.832-.733-1.043-1.89-1.043-3.068m-6 0a3.745 3.745 0 0 0-1.043-3.296A3.745 3.745 0 0 0 7.5 12a3.745 3.745 0 0 0-2.407.936c-.832.733-1.043 1.89-1.043 3.068m0 0a3.745 3.745 0 0 0 1.043 3.296A3.745 3.745 0 0 0 7.5 21a3.745 3.745 0 0 0 2.407-.936c.832-.733 1.043-1.89 1.043-3.068m-3-6a3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 7.5 6a3.745 3.745 0 0 1 2.407.936c.832.733 1.043 1.89 1.043 3.068m0 0a3.745 3.745 0 0 1-1.043 3.296A3.745 3.745 0 0 1 7.5 12a3.745 3.745 0 0 1-2.407-.936c-.832-.733-1.043-1.89-1.043-3.068Z" /></svg>
+                        <h4 class="text-xl font-semibold text-white">6. Création d'un "Code de Vie" Personnel</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Définissez vos valeurs, vos principes et vos règles de vie pour guider vos décisions.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> La révision annuelle de ce code pour l'adapter à votre évolution.</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg reveal-card border border-gray-700 transition-all duration-300 ease-in-out hover:border-rose-400 hover:shadow-xl hover:shadow-rose-400/20">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-rose-300 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 0-1.125 1.125v1.5a3.375 3.375 0 0 0 3.375 3.375H9.75Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H15A2.25 2.25 0 0 1 17.25 12.75v1.5a2.25 2.25 0 0 1-2.25 2.25H13.5m0-4.5V18" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6.75v-1.5a1.125 1.125 0 1 1 2.25 0v1.5m0 0H15A2.25 2.25 0 0 1 17.25 9v1.5m0 0A2.25 2.25 0 0 1 15 12.75H9.75M10.5 18a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm0 0H6.75V6.75" /></svg>
+                        <h4 class="text-xl font-semibold text-white">7. Projet d'Impact Solitaire</h4>
+                    </div>
+                    <p class="text-gray-400 mb-3">Concevez un projet à long terme qui vise à résoudre un problème qui vous tient à cœur.</p>
+                    <p class="text-sm text-rose-300"><span class="font-bold">Technique :</span> L'utilisation de la pensée systémique pour concevoir une solution.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="text-center p-8 border-t border-gray-700 mt-10">
+        <p class="text-gray-500">Construit avec discipline. Hébergé sur GitHub Pages.</p>
+        <p class="text-gray-600 text-sm mt-1">Fichier unique `index.html` avec Tailwind CSS et JS.</p>
+    </footer>
+
+    <!-- Script JavaScript pour l'animation au défilement -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.reveal-card');
+
+            if (!cards.length) return;
+
+            // Options pour l'IntersectionObserver
+            const observerOptions = {
+                root: null, // par rapport au viewport
+                rootMargin: '0px',
+                threshold: 0.1 // 10% de l'élément doit être visible
+            };
+
+            // Callback pour l'observateur
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Cesser d'observer une fois l'animation jouée
+                    }
+                });
+            };
+
+            // Créer l'observateur
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            // Observer chaque carte
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+
+</body>
+</html>
